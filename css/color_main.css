@@ -26,7 +26,8 @@ h1 {
     position: absolute;
     z-index: 20;
     
-    background-color: #456687;
+    background-color: rgba(69, 102, 135, 1);
+    /*background: url(../assets/bg.png) no-repeat;*/
 }
 
 .logo {
@@ -64,7 +65,7 @@ h1 {
     margin-bottom: 20px;
     left: 0;
     right: 0;
-    margin-top: 450px;
+    margin-top: 400px;
 
     background-color: #fff;
 }
@@ -120,7 +121,7 @@ h1 {
     top: 0;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 530px;
+    margin-top: 480px;
     z-index: 1000;
     cursor: url(../assets/pickCursor.svg), auto;
 }
@@ -235,4 +236,58 @@ label {
     height: 200px;
     background-color: aqua;
     z-index: 1500;
+}
+
+.fork_on_github {
+    position: absolute;
+    z-index: 5000;
+    width: 200px;
+    height: 40px;
+    top: 0;
+    right: 0;
+    margin-top: 28px;
+    margin-right: -48px;
+    cursor: pointer;
+    
+    -ms-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    
+    font-family: 'Noto Sans', sans-serif;
+    line-height: 40px;
+    font-weight: 400;
+    font-size: 14px;
+    text-indent: 20px;
+    text-align: center;
+    
+    background-color: rgba(39, 55, 70, 0.8);
+    
+}
+
+.fork_on_github:hover{
+    background-color: rgba(39, 55, 70,1);
+}
+
+/*styling a tags*/
+a{
+    color: #2196f3;
+    text-decoration: none;
+} 
+
+a.link{
+    color: #2196f3;
+    opacity: 0.82;
+    text-decoration: none;
+}
+
+a.visited{
+    color: #2196f3;
+    opacity: 0.82;
+    text-decoration: none;
+}
+
+a.hover{
+    color: #2196f3;
+    opacity: 1;
+    text-decoration: none;
 }
