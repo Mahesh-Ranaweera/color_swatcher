@@ -291,3 +291,51 @@ a.hover{
     opacity: 1;
     text-decoration: none;
 }
+
+.swatch_content {
+    width: 80%;
+    min-width: 480px;
+    height: auto;
+    display: block;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.swatch_pallet {
+    width: 230px;
+    height: 60px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 5px;
+    border-radius: 4px;
+    display: inline-block;
+    float:left;
+}
+
+.swatch_card {
+    width: 46px;
+    float: left;
+    height: 100%;
+    
+    background-color: antiquewhite;
+}
+
+.swatch_aline {
+    max-width: 1200px;
+    width: 100%;
+    min-width: 480px;
+    left: 0;
+    right: 0;
+    margin-left:0 auto;
+    margin-right:0 auto;
+    position:relative;
+    
+    text-align: center;
+}
+
+text_center {
+    text-align: center;
+}
