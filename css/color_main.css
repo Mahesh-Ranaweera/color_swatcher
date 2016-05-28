@@ -65,6 +65,8 @@ h1 {
     right: 0;
     margin-top: 450px;
     
+    pointer-events: none;
+    
     background-color: #fff;
 }
 
@@ -113,12 +115,6 @@ h1 {
 }
 
 #gradient_holder {
-    width: 480px;
-    height: 220px;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 2px;
-    /*background: url(../assets/gradients.svg);*/
 }
 
 
@@ -147,6 +143,7 @@ h1 {
     height: auto;
     float: left;
     display: block;
+    pointer-events: none;
 }
 
 .hex {
