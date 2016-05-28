@@ -1,0 +1,216 @@
+html,body{
+    margin: 0;
+    -webkit-font-smoothing: antialiased;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
+    background-color: #E4EBF1;
+}
+
+h1 {
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 200;
+}
+
+.page_header {
+    height: 60px;
+    width: 100%;
+    top: 0;
+    position: fixed;
+    
+    background-color: #2A3D51;
+}
+
+.page_content {
+    margin-top: 60px;
+    height: 500px;
+    width: 100%;
+    position: absolute;
+    z-index: 20;
+    
+    background-color: #456687;
+}
+
+.logo {
+    width: 60px;
+    height: 60px;
+}
+
+.menu_wrap {
+    position: absolute;
+    max-width: 1200px;
+    width: 80%;
+    min-width: 480px;
+    height: 60px;
+    
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+}
+
+.main_page_content {
+    max-width: 1200px;
+    width: 80%;
+    min-width: 478px;
+    height: auto;
+    position: absolute;
+    z-index: 50;
+    
+    border: 1px solid #F2F5F8;
+    border-radius: 2px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    left: 0;
+    right: 0;
+    margin-top: 450px;
+    
+    background-color: #fff;
+}
+
+.page_content_text {
+    max-width: 1200px;
+    width: 80%;
+    min-width: 480px;
+    position: absolute;
+    z-index: 60;
+    
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    margin-top: 120px;
+    
+    height: auto;
+    background-color: transparent;
+    
+}
+
+.page_desc_text {
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 400;
+    line-height: 50px;
+    word-wrap: break-word;
+    opacity: 0.82;
+    text-indent: 10px;
+}
+
+.text_wrapper {
+    margin-left: 10px;
+    margin-right: 10px;
+    width: auto;
+    height: auto;
+}
+
+.small {
+    font-size: 24px;
+    color: #233343;
+}
+
+.large_text {
+    font-size: 34px;
+    color: #E4EBF1;
+}
+
+#gradient_holder {
+    width: 480px;
+    height: 220px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 2px;
+    /*background: url(../assets/gradients.svg);*/
+}
+
+
+.rgbahex_wrapper {
+    width: 100%;
+    height: 50px;
+    background-color: #F5F5F5;
+}
+
+.rgba {
+    width: 100%;
+    height: 50px;
+    float: left;
+}
+
+.gradient_image {
+    width: 100%;
+    height: 220px;
+    margin-top: 5px;
+}
+
+
+
+.contianer {
+    width: 100%;
+    height: auto;
+    float: left;
+    display: block;
+}
+
+.hex {
+    width: 240px;
+    height: 50px;
+    float: left; 
+    padding-left: 10px;
+}
+
+label {
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 400;
+    line-height: 24px;
+    text-indent: 20px;
+    line-height: 50px;
+    
+    float: left;
+}
+
+.input_txt {
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    text-indent: 20px;
+    border-style: none;
+    height: 24px;
+    width: 100px;
+    border-radius: 2px;
+    float: left;
+    margin-top: 12px;
+    margin-bottom: 13px;
+    
+    color: #456687;
+}
+
+.input_rgb {
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    text-indent: 2px;
+    border-style: none;
+    margin-left: 5px;
+    width: 50px;
+    height: 24px;
+    border-radius: 2px;
+    float: left;
+    margin-top: 12px;
+    margin-bottom: 13px;
+
+    color: #456687;
+}
+
+#canvas_picker {
+    position: absolute;
+    z-index: 500;
+    background: url(../assets/gradients.jpg);
+}
+
+#hex {
+    position: absolute;
+    z-index: 600;
+}
+
+#rgb {
+    position: absolute;
+    z-index: 600;
+}

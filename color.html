@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Color</title>
+        
+        <link href='https://fonts.googleapis.com/css?family=Noto+Sans:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
+        
+        <link rel="stylesheet" type="text/css" href="css/color_main.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        
+        
+        <script type="application/javascript">
+            
+            var canvas = document.getElementById('gradient_holder').getContext('2d');
+
+            // create an image object and get it’s source
+            var img = new Image();
+            img.src = '/assets/gradients.jpg';
+
+            // copy the image to the canvas
+            $(img).load(function(){
+                canvas.drawImage(img,0,0);
+            });
+
+            
+            //hex to rgb
+            function rgbToHex(R,G,B) {return toHex(R)+toHex(G)+toHex(B)}
+            function toHex(n) {
+                n = parseInt(n,10);
+                if (isNaN(n)) return "00";
+                n = Math.max(0,Math.min(n,255));
+                return "0123456789ABCDEF".charAt((n-n%16)/16)  + "0123456789ABCDEF".charAt(n%16);
+            }
+            
+            
+            $('#gradient_holder').click(function(event){
+                // getting user coordinates
+                var x = event.pageX - this.offsetLeft;
+                var y = event.pageY - this.offsetTop;
+                // getting image data and RGB values
+                var imgPick = canvas.getImageData(x, y, 1, 1).data;
+                var R = imgPick[0];
+                var G = imgPick[1];
+                var B = imgPick[2];  
+                
+                //rgb output
+                $("#Rtxt").val(R);
+                $("#Gtxt").val(G);
+                $("#Btxt").val(B);
+                
+                //rgb to hex
+                var HEX = rgbToHex(R,G,B);
+                
+                //hex output
+                $("#HEXtxt").val("#"+ HEX);
+            }); 
+            
+        </script>
+    </head>
+    
+    <body>
+        
+        <!--page header goes here-->
+        <div class="page_header">
+            <div class="menu_wrap">
+                <div class="logo">
+
+                </div>
+            </div>
+        </div>
+        
+        <!--page content-->
+        <div class="main_page_content">
+            <div class="contianer">
+                <div class="rgbahex_wrapper">
+                    <div class="rgba">
+                        <label>HEX: </label><input class="input_txt" type="text" placeholder="#HEX" id="HEXtxt"></input>
+                        <label>RGB: R :</label>
+                        <input class="input_rgb" type="text" placeholder="R" id="Rtxt"></input>
+                        <label>G :</label>
+                        <input class="input_rgb" type="text" placeholder="G" id="Gtxt"></input>
+                        <label>B :</label>
+                        <input class="input_rgb" type="text" placeholder="B" id="Btxt"></input>
+                    </div>
+                </div>
+                <div class="gradient_image">
+                    <canvas id="gradient_holder"></canvas>
+                </div>
+            </div>
+        </div>
+        <div class="page_content"></div>
+        <div class="page_content_text">
+            <div class="text_wrapper">
+                <div class="page_desc_text">
+                    <p class="large_text">Free swatch generator for your websites</p>
+                    <p class="small">Share your colors with the world</p>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
+
+<!--developed by Mahesh Ranaweera aka mi6softlab
+    on Friday 27,2016
+    www.mi6softlab.com
+    find me on github : https://github.com/mi6softlab
+    Open-source
+-->

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <script type="application/javascript">
+            function msg()
+            {
+                var name = document.getElementById("name").value;
+                var year = document.getElementById("year").value;
+                
+                var out = document.getElementById("title");
+                out.innerHTML = name + " " + year;
+            }
+        </script>
+    </head>
+    
+    <body>
+        <h1 id="title"></h1> 
+        
+        <input type="text" id="name">
+        <input type="year" id="year">
+        
+        <input type="submit" onclick="msg()">
+    </body>
+</html>
