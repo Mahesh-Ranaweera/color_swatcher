@@ -61,12 +61,11 @@ h1 {
     margin-right: auto;
     padding-top: 20px;
     padding-bottom: 20px;
+    margin-bottom: 20px;
     left: 0;
     right: 0;
     margin-top: 450px;
-    
-    pointer-events: none;
-    
+
     background-color: #fff;
 }
 
@@ -115,6 +114,15 @@ h1 {
 }
 
 #gradient_holder {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 530px;
+    z-index: 1000;
+    cursor: url(../assets/pickCursor.svg), auto;
 }
 
 
@@ -198,8 +206,12 @@ label {
 
 #canvas_picker {
     position: absolute;
-    z-index: 500;
-    background: url(../assets/gradients.jpg);
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 500000;
 }
 
 #hex {
@@ -210,4 +222,17 @@ label {
 #rgb {
     position: absolute;
     z-index: 600;
+}
+
+#garadient {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    width: 200px;
+    height: 200px;
+    background-color: aqua;
+    z-index: 1500;
 }
